@@ -1,0 +1,35 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.gallery {
+  border: 1px solid #000;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-auto-rows: 100px;
+  grid-gap: 0;
+  grid-template-columns: repeat(5, 100px);
+  height: 500px;
+  left: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 500px;
+}
+
+.item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #000;
+}
+
+.item.is-active {
+  border: 3px solid #cfa620;
+}

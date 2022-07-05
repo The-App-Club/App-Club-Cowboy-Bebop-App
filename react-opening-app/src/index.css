@@ -1,0 +1,47 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.image-container {
+  /* border: 3px solid; */
+  max-width: 30%;
+  width: 100%;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;
+  grid-template-areas:
+    'img-1 img-1 img-1'
+    'img-1 img-1 img-1'
+    'img-1 img-1 img-1'
+    'img-2 img-3 img-4';
+}
+
+.product {
+  cursor: pointer;
+  will-change: transform;
+}
+
+.product[data-grid='img-1'] {
+  grid-area: img-1;
+  z-index: 1;
+  cursor: default;
+}
+
+.product[data-grid='img-2'] {
+  grid-area: img-2;
+}
+
+.product[data-grid='img-3'] {
+  grid-area: img-3;
+}
+
+.product[data-grid='img-4'] {
+  grid-area: img-4;
+}

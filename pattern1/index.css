@@ -1,0 +1,78 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+}
+
+.pane {
+  background: #000;
+}
+
+.pane1 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  /* https://developer.mozilla.org/ja/docs/Web/CSS/box-shadow */
+  box-shadow: inset 0px -2px 0 0 #fdf5b7;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('https://media.giphy.com/media/b21HcSrrBu8pi/giphy.gif');
+}
+
+.pane2 {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 0%;
+  /* https://developer.mozilla.org/ja/docs/Web/CSS/box-shadow */
+  box-shadow: inset 2px 0px 0 0 #fdf5b7;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('https://media.giphy.com/media/3TACspcXhhQPK/giphy.gif');
+}
+
+.pane3 {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 0%;
+  /* https://developer.mozilla.org/ja/docs/Web/CSS/box-shadow */
+  box-shadow: inset 0px 2px 0 0 #fdf5b7;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('https://media.giphy.com/media/xdgisqRDFyO9G/giphy.gif');
+}
+.pane4 {
+  position: absolute;
+  z-index: 4;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  /* https://developer.mozilla.org/ja/docs/Web/CSS/box-shadow */
+  box-shadow: inset -2px 0px 0 0 #fdf5b7;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('https://media.giphy.com/media/8hXlcywWOFiJW/giphy.gif');
+}

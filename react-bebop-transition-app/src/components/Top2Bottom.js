@@ -1,0 +1,51 @@
+import {useEffect, useState} from 'react';
+import {Image2} from './Image2';
+import {css} from '@emotion/css';
+
+const Top2Bottom = () => {
+  const [hide, setHide] = useState(false);
+
+  const handleClick = () => {
+    setHide((show) => {
+      return !show;
+    });
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClick);
+
+    return () => {
+      document.removeEventListener('click', handleClick);
+    };
+  }, []);
+
+  const title = 'CowboyBebop';
+
+  return (
+    <div
+      className={css`
+        display: flex;
+        align-items: ${hide ? 'flex-start' : 'flex-end'};
+        flex-direction: column;
+      `}
+    >
+      {[...title].map((c, index) => {
+        return (
+          <Image2
+            key={index}
+            index={index}
+            hide={hide}
+            duration={1200}
+            src={`https://media.giphy.com/media/3XUbDJ3rPBK1y/giphy.gif`}
+            delay={100 * (index + 1)}
+            title={title}
+            reverse={false}
+            size={1}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
+export {Top2Bottom};

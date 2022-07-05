@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write \"{,!(node_modules|dist|build)/**/}*.*\""
+  },
+  "dependencies": {
+    "prettier": "^2.4.1"
+  }
+}

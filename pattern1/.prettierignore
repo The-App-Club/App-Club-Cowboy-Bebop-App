@@ -1,0 +1,6 @@
+.gitignore
+.prettierignore
+images/
+.sass-cache/*
+*.pug
+*.css.map

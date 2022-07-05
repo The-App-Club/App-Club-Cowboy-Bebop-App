@@ -1,0 +1,3 @@
+- Reference
+  - [embla-carousel](https://www.embla-carousel.com/)
+  - [gsap flip](https://greensock.com/docs/v3/Plugins/Flip)

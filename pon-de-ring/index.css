@@ -1,0 +1,257 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  --touch-menu-item-degree: 22deg;
+  --touch-menu-item-height: 45px;
+  --touch-menu-item-width: 45px;
+  --touch-menu-base-width: 280px;
+  --touch-menu-base-height: 280px;
+  --touch-menu-background-color: transparent;
+  --touch-menu-circle-background-color: #e48e8e;
+  --touch-menu-item-background-color: transparent;
+}
+.touch-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: var(--touch-menu-base-width);
+  height: var(--touch-menu-base-width);
+  background-color: var(--touch-menu-background-color);
+  opacity: 1;
+  transition: all 1.2s;
+  z-index: 9999;
+}
+.touch-menu-item:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%)
+    rotate(calc(0deg + var(--touch-menu-item-degree)));
+  width: var(--touch-menu-item-width);
+  height: var(--touch-menu-base-height);
+  background-color: var(--touch-menu-item-background-color);
+  z-index: 11;
+}
+.touch-menu-item:nth-child(1)::before {
+  position: absolute;
+  top: 0.595rem;
+  left: 0.595rem;
+  content: "\f10d";
+  font-family: "Material Icons";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  font-size: 1.5rem;
+  color: #2f2f2f;
+  cursor: pointer;
+  z-index: 11;
+}
+.touch-menu-item:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%)
+    rotate(calc(45deg + var(--touch-menu-item-degree)));
+  width: var(--touch-menu-item-width);
+  height: var(--touch-menu-base-height);
+  background-color: var(--touch-menu-item-background-color);
+}
+.touch-menu-item:nth-child(2)::before {
+  position: absolute;
+  top: 0.595rem;
+  left: 0.595rem;
+  content: "\e55b";
+  font-family: "Material Icons";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  font-size: 1.5rem;
+  color: #2f2f2f;
+  cursor: pointer;
+  z-index: 1;
+}
+.touch-menu-item:nth-child(3) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%)
+    rotate(calc(90deg + var(--touch-menu-item-degree)));
+  width: var(--touch-menu-item-width);
+  height: var(--touch-menu-base-height);
+  background-color: var(--touch-menu-item-background-color);
+}
+.touch-menu-item:nth-child(3)::before {
+  position: absolute;
+  top: 0.595rem;
+  left: 0.595rem;
+  content: "\e87d";
+  font-family: "Material Icons";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  font-size: 1.5rem;
+  color: #2f2f2f;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.touch-menu-item:nth-child(4) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%)
+    rotate(calc(135deg + var(--touch-menu-item-degree)));
+  width: var(--touch-menu-item-width);
+  height: var(--touch-menu-base-height);
+  background-color: var(--touch-menu-item-background-color);
+}
+.touch-menu-item:nth-child(4)::before {
+  position: absolute;
+  top: 0.595rem;
+  left: 0.595rem;
+  content: "\e80d";
+  font-family: "Material Icons";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  font-size: 1.5rem;
+  color: #2f2f2f;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.touch-menu-place {
+  position: absolute;
+  bottom: 0;
+  width: var(--touch-menu-item-width);
+  height: var(--touch-menu-base-height);
+  background-color: var(--touch-menu-item-background-color);
+  z-index: 11;
+}
+.touch-menu-place::before {
+  position: absolute;
+  top: 0.595rem;
+  left: 0.595rem;
+  content: "\e55f";
+  font-family: "Material Icons";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  font-size: 1.5rem;
+  color: #2f2f2f;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.touch-menu-cart {
+  position: absolute;
+  bottom: 0;
+  width: var(--touch-menu-item-width);
+  height: var(--touch-menu-base-height);
+  background-color: var(--touch-menu-item-background-color);
+  z-index: 11;
+}
+
+.touch-menu-cart::before {
+  position: absolute;
+  top: 0.595rem;
+  left: 0.595rem;
+  content: "\e8cc";
+  font-family: "Material Icons";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  font-size: 1.5rem;
+  color: #2f2f2f;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.touch-menu-sell {
+  position: absolute;
+  bottom: 0;
+  width: var(--touch-menu-item-width);
+  height: var(--touch-menu-base-height);
+  background-color: var(--touch-menu-item-background-color);
+  z-index: 11;
+}
+
+.touch-menu-sell::before {
+  position: absolute;
+  top: 0.595rem;
+  left: 0.595rem;
+  content: "\f05b";
+  font-family: "Material Icons";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  font-size: 1.5rem;
+  color: #2f2f2f;
+  cursor: pointer;
+  z-index: 1;
+}
+.touch-menu-gift {
+  position: absolute;
+  bottom: 0;
+  width: var(--touch-menu-item-width);
+  height: var(--touch-menu-base-height);
+  background-color: var(--touch-menu-item-background-color);
+  z-index: 11;
+}
+
+.touch-menu-gift::before {
+  position: absolute;
+  top: 0.595rem;
+  left: 0.595rem;
+  content: "\e8f6";
+  font-family: "Material Icons";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  font-size: 1.5rem;
+  color: #2f2f2f;
+  cursor: pointer;
+  z-index: 1;
+}
+.touch-menu-bookmark {
+  position: absolute;
+  bottom: 0;
+  width: var(--touch-menu-item-width);
+  height: var(--touch-menu-base-height);
+  background-color: var(--touch-menu-item-background-color);
+  z-index: 11;
+}
+
+.touch-menu-bookmark::before {
+  position: absolute;
+  top: 0.595rem;
+  left: 0.595rem;
+  content: "\e98b";
+  font-family: "Material Icons";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  font-size: 1.5rem;
+  color: #2f2f2f;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.touch-menu-circle {
+  width: var(--touch-menu-item-width);
+  height: var(--touch-menu-item-height);
+  background-color: var(--touch-menu-circle-background-color);
+  cursor: pointer;
+  clip-path: circle(50%);
+}

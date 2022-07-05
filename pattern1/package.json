@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "format": "prettier --write \"{,!(node_modules|dist|build)/**/}*.*\""
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
+}
